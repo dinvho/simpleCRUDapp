@@ -26,13 +26,6 @@ MongoClient.connect(dbConnecttionStr, {useUnifiedTopology: true})
             completed: false
         })
         res.render('index.ejs', {zebra: todoItems, left: itemsLeft})
-        // db.collection('todos').find().toArray()
-        // .then(data => {
-        //     db.collection('todos').countDocuments({completed: false})
-        //     .then(itemsLeft =>{
-        //         res.render('index.ejs', {zebra: data, left: itemsLeft})
-        //     })
-        // })
     })
 
     app.post('/createTodo', (req, res)=>{
@@ -76,6 +69,6 @@ MongoClient.connect(dbConnecttionStr, {useUnifiedTopology: true})
         })
     })
 
-app.listen(process.env.PORT || PORT, ()=> {
+app.listen( process.env.PORT || PORT, ()=> {
     console.log('Server is running, you better catch it!')
 })
