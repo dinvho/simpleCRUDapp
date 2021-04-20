@@ -9,7 +9,13 @@
 </head>
 <body>
     <section class='todoReceipt' id='todoReceipt'>
-        <h1>Todos</h1>
+        <h1>Todo Tasks</h1>
+
+        <form action="/createTodo" method='POST'>
+            <input type="text" name="todoItem" placeholder="Enter a todo">
+            <input type="submit" class="add" value="Add" id ='addBtn'>
+        </form>
+
         <ul>
             <% for( let i = 0; i < zebra.length; i++) { %>
                 <li class='todoItem'>
@@ -18,17 +24,14 @@
                     <% } else {%>
                     <span ><%= zebra[i].todo %></span>
                     <% } %>
-                    <span class='del'> Delete </span>
+                    <span class='del'> <button>Delete</button> </span>
                 </li>
             <% } %>
         </ul>
     
-        <h2>Things left to do: <%= left %></h2>
+        <h2>Todo(s) left: <%= left %></h2>
     
-        <form action="/createTodo" method='POST'>
-            <input type="text" name="todoItem" placeholder="Enter a todo">
-            <input type="submit">
-        </form>
+
     </section>
 
     <script src='js/main.js'></script>

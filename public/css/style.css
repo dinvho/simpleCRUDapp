@@ -1,13 +1,5 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-h1 {
-    color: red;
-}
-
-.completed{
-    text-decoration: line-through;
-    color: grey;
-}
 
 body {
     display: flex;
@@ -17,11 +9,46 @@ body {
     background: rgb(248, 244, 227, 0.50);
 }
 
-body *{
-    font-family: 'Permanent Marker', cursive;
+h1, h2, form{
+    margin: 10px 25px;
 }
+
+h1 {
+    color: rgb(14, 14, 14);
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Permanent Marker', cursive;
+    padding: 10px 0;
+}
+
+.todoItem {
+    border-bottom: 1px solid black;
+    margin: 10px 25px;
+    padding: 5px;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: grey;
+}
+
 .todoReceipt {
+    position: relative;
     height: 600px;
     width: 400px;
     background: rgb(248, 244, 227, 0.95);
+}
+
+.todoReceipt h2 {
+    position: absolute;
+    bottom: 0px;
+}
+
+ul,li { list-style-type: none;
+    list-style-position:inside;
+    padding:0; }
+
+#addBtn {
+    background: white;
+    border: none;
 }
