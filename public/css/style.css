@@ -1,3 +1,5 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 h1 {
     color: red;
 }
@@ -5,4 +7,21 @@ h1 {
 .completed{
     text-decoration: line-through;
     color: grey;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(248, 244, 227, 0.50);
+}
+
+body *{
+    font-family: 'Permanent Marker', cursive;
+}
+.todoReceipt {
+    height: 600px;
+    width: 400px;
+    background: rgb(248, 244, 227, 0.95);
 }
