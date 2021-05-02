@@ -31,7 +31,7 @@ MongoClient.connect(dbConnecttionStr, {useUnifiedTopology: true})
     app.post('/createTodo', (req, res)=>{
         db.collection('todos').insertOne({todo: req.body.todoItem, completed: false})
         .then(result=> {
-            console.log('Todo has been added!')
+            console.log('Todo +1')
             res.redirect('/')
         })
     })
