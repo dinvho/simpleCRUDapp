@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: rgb(248, 244, 227, 0.50);
+    background: rgba(165, 163, 155, 0.5);
 }
 
 h1, h2, form{
