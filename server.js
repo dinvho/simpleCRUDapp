@@ -70,5 +70,6 @@ MongoClient.connect(dbConnecttionStr, {useUnifiedTopology: true})
     })
 
 app.listen( process.env.PORT || PORT, ()=> {
-    console.log('Server is running, you better catch it!')
+    console.log('Server is running!')
 })
+
